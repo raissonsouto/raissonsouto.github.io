@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="hamburguer"></div>
+        <div id="logo"></div>
+        <div>Inicio</div>
+        <div>Sobre</div>
+        <div>Habilidades</div>
+        <div>Experiências</div>
+        <div>Contato</div>
+    </header>
+    <div id="side-bar">
+        <div id="photo"><img src="static/images/perfil.jpg" alt=""></div>
+        <div id="name">Raisson Souto</div>
+        <div id="occupation">Estudante de Ciência da Computação </br>na UFCG</div>
+        <div id="description">"explorando esse incrível mundo da programação para encontrar a área que mais gosto"</div>
+        <div id="main-email">raissonsouto@outlook.com</div>
+        <div id="social-networks">
+            <div id="github"><a href="https://github.com/raissonsouto"><img src="static/images/github-logo.png" alt=""></a></div>
+            <div id="twitter"><a href="https://twitter.com/raissonsouto"><img src="static/images/twitter-logo.png" alt=""></a></div>
+            <div id="linkedin"><a href="https://www.linkedin.com/in/raissonsouto/"><img src="static/images/linkedin-logo.png" alt=""></a></div>
+            <div id="instagram"><a href="https://www.instagram.com/raissonsouto/"><img src="static/images/instagram-logo.png" alt=""></a></div>
+        </div>
+    </div>
+    <main>
+        <div>
+            <div>
+                <h1>dados pessoais</h1>
+                <p>nome: raisson adrian grangeiro souto</p>
+                <p>idade: 18 anos</p>
+                <p>email</p>
+            </div>
+        </div>
+        <div>
+            <h1>habilidades</h1>
+            <h2>tecnologias e ferramentas</h2>
+            <p>frontend</p>
+            <p>backend</p>
+            <p>build tools</p>
+            <p>dev tools</p>
+            <p>so</p>
+            <p>testes automatizados</p>
+            <p>DB's</p>
+        </div>
+        <div>formação academica</div>
+        <div>Experiências</div>
+        <div>Contato</div>
+    </main>
+    <div><ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul></div>
+</body>
+</html>
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #767999;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    padding: 0px 5%;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+header div {
+    align-self: center;
+}
+
+#hamburguer, #logo {
+    display: none;
+}
+
+#side-bar {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#photo {
+    margin: 35px 0px;
+}
+
+#photo img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+#name {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#occupation {
+    color: #666;
+    margin: 20px 0;
+}
+
+#description {
+    margin: 20px 0;
+}
+
+#main-email {
+    color: rgb(17, 125, 226);
+    margin-top: 40px;
+}
+
+#social-networks {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#social-networks div {
+    display: inline-flex;
+}
+
+#social-networks div img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    background-color: #eee;
+    display: inline-flex;
+    min-width: 600px;
+    width: 75%;
+    height: 2000px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    border-radius: 10px;
+}
