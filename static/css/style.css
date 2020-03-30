@@ -23,6 +23,7 @@ header {
 
 header div {
     align-self: center;
+    cursor: pointer;
 }
 
 #hamburguer, #logo {
@@ -77,4 +78,8 @@ header div {
 
 #fp-nav li:hover {
     background-color: red;
+}
+
+#fp-nav li .fp-nav-on {
+    background-color: #222;
 }
