@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="hamburger">
-            <span class="hamburger__top-bun"></span>
-            <span class="hamburger__bottom-bun"></span>
+        <div id="hamburger">
+            <div class="mobile" id="hamburger-top"></div>
+            <div class="mobile" id="hamburger-bottom"></div>
         </div>  
-        <div id="logo">Raisson Souto</div>
-        <div id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></div>
-        <div id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></div>
-        <div id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></div>
-        <div id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></div>
-        <div id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#protifolio-main">Portifolio</a></div>
-        <div id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></div>
+        <div class="desktop" id="logo">Raisson Souto</div>
+        <div class="desktop" id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></div>
+        <div class="desktop" id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></div>
+        <div class="desktop" id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></div>
+        <div class="desktop" id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></div>
+        <div class="desktop" id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#protifolio-main">Portifolio</a></div>
+        <div class="desktop" id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></div>
     </header>
     <main>
         <div id="home-main">

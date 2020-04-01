@@ -14,11 +14,16 @@ function scrollingTo(section) {
 
 //  toggle hamburguer
 
-document.getElementById('hamburguer').addEventListener('click', () => {
-  if (document.getElementById('hamburguer').className == "") {
+document.getElementById('hamburger').addEventListener('click', () => {
 
-    document.getElementById('hamburguer').className == "open";
+  if (document.getElementById('hamburger').className == "") {
+
+    document.getElementById('hamburger').className = "open";
+    document.querySelector("header").style.height = "100vh";
+    document.querySelector(".desktop").style.display = "block";
   } else {
-    document.getElementById('hamburguer').className == "";
+    document.getElementById('hamburger').className = "";
+    document.querySelector("header").style.height = "40px";
+    document.querySelector(".desktop").style.display = "none";
   }
 });
