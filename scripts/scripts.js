@@ -1,25 +1,24 @@
-var sectionActive = "home"
+var sectionActive = 'home';
 
-window.addEventListener('load',() => {
-    document.getElementById(sectionActive+"-header").style.color = "red";
-    document.getElementById(sectionActive+"-nav").style.backgroundColor = "green";
-});
+function scrollingTo(section) { 
 
-function scrolling(to){ 
+  document.getElementById(sectionActive+"-header").querySelector('a').style.color = "#000";
+  document.getElementById(sectionActive+"-nav").style.backgroundColor = "#aaa";
 
-    window.scrollTo(0, document.getElementById(to+'-main').offsetTop);
+  sectionActive = section;
+
+  document.getElementById(section+"-header").querySelector('a').style.color = "#000aaa";
+  document.getElementById(section+"-nav").style.backgroundColor = "#000aaa";
+
 }
 
-document.getElementById("home-header").addEventListener("click", () => {scrolling("home")});
-document.getElementById("about-header").addEventListener("click", () => {scrolling("about")});
-document.getElementById("experience-header").addEventListener("click", () => {scrolling("experience")});
-document.getElementById("skills-header").addEventListener("click", () => {scrolling("skills")});
-document.getElementById("portifolio-header").addEventListener("click", () => {scrolling("portifolio")});
-document.getElementById("contact-header").addEventListener("click", () => {scrolling("contact")});
+//  toggle hamburguer
 
-document.getElementById("home-nav").addEventListener("click", () => {scrolling("home")});
-document.getElementById("about-nav").addEventListener("click", () => {scrolling("about")});
-document.getElementById("experience-nav").addEventListener("click", () => {scrolling("experience")});
-document.getElementById("skills-nav").addEventListener("click", () => {scrolling("skills")});
-document.getElementById("portifolio-nav").addEventListener("click", () => {scrolling("portifolio")});
-document.getElementById("contact-nav").addEventListener("click", () => {scrolling("contact")});
+document.getElementById('hamburguer').addEventListener('click', () => {
+  if (document.getElementById('hamburguer').className == "") {
+
+    document.getElementById('hamburguer').className == "open";
+  } else {
+    document.getElementById('hamburguer').className == "";
+  }
+});

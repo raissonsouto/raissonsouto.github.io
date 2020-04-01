@@ -9,33 +9,55 @@
 </head>
 <body>
     <header>
-        <div id="hamburguer"></div>
+        <div class="hamburger">
+            <span class="hamburger__top-bun"></span>
+            <span class="hamburger__bottom-bun"></span>
+        </div>  
         <div id="logo">Raisson Souto</div>
-        <div id="home-header">Home</div>
-        <div id="about-header">About</div>
-        <div id="experience-header">Experience</div>
-        <div id="skills-header">Skills</div>
-        <div id="portifolio-header">Portifolio</div>
-        <div id="contact-header">Contact</div>
+        <div id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></div>
+        <div id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></div>
+        <div id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></div>
+        <div id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></div>
+        <div id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#protifolio-main">Portifolio</a></div>
+        <div id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></div>
     </header>
     <main>
-        <div class="main-content" id="home-main"></div>
-        <div class="main-content" id="about-main"></div>
-        <div class="main-content" id="experience-main"></div>
-        <div class="main-content" id="skills-main"></div>
-        <div class="main-content" id="portifolio-main"></div>
-        <div class="main-content" id="contact-main"></div>
+        <div id="home-main">
+            <h1>Home</h1>
+            <p>Aqui eu coloco um pouco de tudo</p>
+        </div>
+        <div id="about-main">
+            <h1>About</h1>
+            <p>Aqui eu coloco algumas coisas sobre mim</p>
+        </div>
+        <div id="experience-main">
+            <h1>Experience</h1>
+            <p>Aqui eu coloco os projetos que eu participei</p>
+        </div>
+        <div id="skills-main">
+            <h1>Skills</h1>
+            <p>Aqui eu coloco minhas habilidades, tais como idiomas, tecnologias, etc</p>
+        </div>
+        <div id="portifolio-main">
+            <h1>Portifolio</h1>
+            <p>decidir entre experiencias e portifolio</p>
+        </div>
+        <div id="contact-main">
+            <h1>Contact</h1>
+            <p>Aqui eu coloco as formas das pessoas me encontrarem</p>
+        </div>
     </main>
     <div id="fp-nav">
         <ul>
             <li id="home-nav"></li>
             <li id="about-nav"></li>
             <li id="experience-nav"></li>
-            <li id="skills-nav"></li>
+            <li id="skills-nav"><a></a></li>
             <li id="portifolio-nav"></li>
             <li id="contact-nav"></li>
         </ul>
     </div>
     <script src="scripts/scripts.js"></script>
+    </script>
 </body>
 </html>
