@@ -1,16 +1,21 @@
 @media (max-width: 720px) {
 
-    #hamburguer, #logo {
+  header {
+    position: fixed;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    font-weight: 400;
+  }
+
+    .mobile {
         display: flex;
     }
 
-    #home-header,
-    #about-header,
-    #experience-header,
-    #skills-header,
-    #portifolio-header,
-    #contact-header {
-        display: none;
+    .desktop {
+        display: block;
+        position: relative;
     }
 
     #hamburger {

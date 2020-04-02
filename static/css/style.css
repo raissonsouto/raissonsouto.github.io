@@ -40,7 +40,7 @@ header a:hover {
     color: #000555bb;
 }
 
-#hamburguer, #logo {
+.mobile {
     display: none;
 }
 

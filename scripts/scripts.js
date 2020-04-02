@@ -20,10 +20,10 @@ document.getElementById('hamburger').addEventListener('click', () => {
 
     document.getElementById('hamburger').className = "open";
     document.querySelector("header").style.height = "100vh";
-    document.querySelector(".desktop").style.display = "block";
+    //document.querySelector(".desktop").style.display = "flex";
   } else {
     document.getElementById('hamburger').className = "";
-    document.querySelector("header").style.height = "40px";
+    document.querySelector("header").style.height = "50px";
     document.querySelector(".desktop").style.display = "none";
   }
 });
