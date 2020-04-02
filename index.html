@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
-    <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="mobile" id="hamburger">
-            <div id="hamburger-top"></div>
-            <div id="hamburger-bottom"></div>
-        </div>  
-        <div class="mobile" id="logo">Raisson Souto</div>
-        
-        <div class="desktop" id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></div>
-        <div class="desktop" id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></div>
-        <div class="desktop" id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></div>
-        <div class="desktop" id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></div>
-        <div class="desktop" id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#portifolio-main">Portifolio</a></div>
-        <div class="desktop" id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></div>
-    </header>
-    <main>
-        <div id="home-main">
+    <div class="container">
+        <header>
+            <div class="mobile" id="hamburger">
+                <div id="hamburger-top"></div>
+                <div id="hamburger-bottom"></div>
+            </div>  
+            <div class="mobile" id="logo">Raisson Souto</div>
+            <div class="desktop" id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></div>
+            <div class="desktop" id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></div>
+            <div class="desktop" id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></div>
+            <div class="desktop" id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></div>
+            <div class="desktop" id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#portifolio-main">Portifolio</a></div>
+            <div class="desktop" id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></div>
+        </header>
+        <nav class="mobile" id="nav-header">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Experience</li>
+                <li>Skills</li>
+                <li>portifolio</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+        <div class="main" id="home-main">
             <h1>Home</h1>
             <p>Aqui eu coloco um pouco de tudo</p>
         </div>
-        <div id="about-main">
+        <div class="main" id="about-main">
             <h1>About</h1>
             <p>Aqui eu coloco algumas coisas sobre mim</p>
         </div>
-        <div id="experience-main">
+        <div class="main" id="experience-main">
             <h1>Experience</h1>
             <p>Aqui eu coloco os projetos que eu participei</p>
         </div>
-        <div id="skills-main">
+        <div class="main" id="skills-main">
             <h1>Skills</h1>
             <p>Aqui eu coloco minhas habilidades, tais como idiomas, tecnologias, etc</p>
         </div>
-        <div id="portifolio-main">
+        <div class="main" id="portifolio-main">
             <h1>Portifolio</h1>
             <p>decidir entre experiencias e portifolio</p>
         </div>
-        <div id="contact-main">
+        <div class="main" id="contact-main">
             <h1>Contact</h1>
             <p>Aqui eu coloco as formas das pessoas me encontrarem</p>
         </div>
-    </main>
-    <div id="fp-nav">
-        <ul>
-            <li id="home-nav"></li>
-            <li id="about-nav"></li>
-            <li id="experience-nav"></li>
-            <li id="skills-nav"><a></a></li>
-            <li id="portifolio-nav"></li>
-            <li id="contact-nav"></li>
-        </ul>
-    </div>
-    <script src="scripts/scripts.js"></script>
-    </script>
+        <div id="fp-nav">
+            <ul>
+                <li id="home-nav"></li>
+                <li id="about-nav"></li>
+                <li id="experience-nav"></li>
+                <li id="skills-nav"><a></a></li>
+                <li id="portifolio-nav"></li>
+                <li id="contact-nav"></li>
+            </ul>
+        </div>
+      </div>
 </body>
+<script src="scripts/scripts.js"></script>
 </html>

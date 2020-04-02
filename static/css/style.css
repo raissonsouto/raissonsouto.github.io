@@ -2,11 +2,24 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+    padding: 0;
+}
+  
+body {
+    background: #333;
+    color: #000;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
 }
 
-body {
-    background-color: #aaa;
+  .container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 header {
@@ -14,20 +27,26 @@ header {
     position: fixed;
     z-index: 1;
     height: 40px;
-    padding: 0px 5%;
-    background-color: #ccc;
+    padding: 0px 7%;
+    background-color: #777;/*mudar*/
     display: flex;
     justify-content: space-around;
-    font-weight: 500;
 }
 
-.desktop, .mobile {
-    align-self: center;
-    cursor: pointer;
+header a:hover {
+    color: #000555bb;
 }
 
 #home-header a {
     color: #000aaa;
+}
+
+.desktop, .mobile {
+    align-self: center;
+}
+
+.mobile {
+    display: none;
 }
 
 header a {
@@ -35,31 +54,25 @@ header a {
     transition: 0.3s;
     color: #000;
 }
-
-header a:hover {
-    color: #000555bb;
-}
-
-.mobile {
-    display: none;
-}
-
-main div {
-    padding-top: 40px;
-    text-align: center;
+  
+.main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    position: relative;
+    text-align: center;
     width: 100%;
     height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
 }
 
 #fp-nav {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 0px;
+    right: 25px;
 }
 
 #fp-nav li {
