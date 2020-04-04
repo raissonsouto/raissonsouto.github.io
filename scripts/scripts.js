@@ -12,17 +12,22 @@ function scrollingTo(section) {
 
 }
 
+function closeOptionsBar() {
+  
+  if (document.getElementById('hamburger').className == "mobile") {
+
+    document.getElementById('hamburger').className = "mobile open";
+    document.getElementById('options-bar-div').style.height = "100vh";
+    document.getElementById('options-bar').style.display = "block";
+  } else {
+
+    document.getElementById('hamburger').className = "mobile";
+    document.getElementById('options-bar-div').style.height = "0px";
+    document.getElementById('options-bar').style.display = "none";
+  }
+}
 //  toggle hamburguer
 
 document.getElementById('hamburger').addEventListener('click', () => {
-
-  if (document.getElementById('hamburger').className == "") {
-
-    document.getElementById('hamburger').className = "open";
-    document.getElementById('nav-header').style.height = "100vh";
-  } else {
-
-    document.getElementById('hamburger').className = "";
-    document.getElementById('nav-header').style.height = "0px";
-  }
+  closeOptionsBar();
 });
