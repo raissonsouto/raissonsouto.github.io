@@ -19,11 +19,10 @@ document.getElementById('hamburger').addEventListener('click', () => {
   if (document.getElementById('hamburger').className == "") {
 
     document.getElementById('hamburger').className = "open";
-    document.querySelector("header").style.height = "100vh";
-    document.getElementById('nav-header').style.display = "block";
+    document.getElementById('nav-header').style.height = "100vh";
   } else {
+
     document.getElementById('hamburger').className = "";
-    document.querySelector("header").style.height = "50px";
-    document.getElementById('nav-header').style.display = "none";
+    document.getElementById('nav-header').style.height = "0px";
   }
 });
