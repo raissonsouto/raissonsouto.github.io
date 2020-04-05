@@ -12,22 +12,19 @@ function scrollingTo(section) {
 
 }
 
-function closeOptionsBar() {
+function toggleHamburguer() {
   
-  if (document.getElementById('hamburger').className == "mobile") {
+  if (document.getElementById('hamburger').className == "mobile-header") {
 
-    document.getElementById('hamburger').className = "mobile open";
-    document.getElementById('options-bar-div').style.height = "100vh";
-    document.getElementById('options-bar').style.display = "block";
+    document.getElementById('hamburger').className = "mobile-header open";
+    document.getElementById('header').style.height = '100vh';
+    document.getElementById('list-header').style.opacity = '1';
+    document.getElementById('list-header').style.margin = '50px 7%';
   } else {
 
-    document.getElementById('hamburger').className = "mobile";
-    document.getElementById('options-bar-div').style.height = "0px";
-    document.getElementById('options-bar').style.display = "none";
+    document.getElementById('hamburger').className = "mobile-header";
+    document.getElementById('header').style.height = '50px';
+    document.getElementById('list-header').style.opacity = '0';
+    document.getElementById('list-header').style.margin = '0px 7%';
   }
 }
-//  toggle hamburguer
-
-document.getElementById('hamburger').addEventListener('click', () => {
-  closeOptionsBar();
-});

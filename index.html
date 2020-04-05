@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Raisson Souto</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/mobile.css">
+    <link rel="stylesheet" href="static/css/style-mobile.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/header-mobile.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/main-mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="mobile" id="hamburger">
-                <div id="hamburger-top"></div>
-                <div id="hamburger-bottom"></div>
-            </div>  
-            <div class="mobile" id="logo">Raisson Souto</div>
-            <div class="desktop" id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></div>
-            <div class="desktop" id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></div>
-            <div class="desktop" id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></div>
-            <div class="desktop" id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></div>
-            <div class="desktop" id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#portifolio-main">Portifolio</a></div>
-            <div class="desktop" id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></div>
+        <header id="header">
+            <div class="mobile-header" id="hamburger" onclick="toggleHamburguer()">
+                <div class="hamburger-part" id="hamburger-top"></div>
+                <div class="hamburger-part" id="hamburger-bottom"></div>
+            </div>
+            <div class="mobile-header" id="logo">Raisson Souto</div>
+            <ul id="list-header">
+                <li class="desktop-header list-header" id="home-header" onclick="scrollingTo()"><a href="#home-main">HOME</a></li>
+                <li class="desktop-header list-header" id="about-header" onclick="scrollingTo()"><a href="#about-main">ABOUT</a></li>
+                <li class="desktop-header list-header" id="experience-header" onclick="scrollingTo()"><a href="#experience-main">EXPERIENCE</a></li>
+                <li class="desktop-header list-header" id="skills-header" onclick="scrollingTo()"><a href="#skills-main">SKILLS</a></li>
+                <li class="desktop-header list-header" id="portifolio-header" onclick="scrollingTo()"><a href="#portifolio-main">PORTIFOLIO</a></li>
+                <li class="desktop-header list-header" id="contact-header" onclick="scrollingTo()"><a href="#contact-main">CONTACT</a></li>
+            </ul>
         </header>
         <div class="main" id="home-main">
             <h1>Home</h1>
@@ -47,26 +53,16 @@
             <h1>Contact</h1>
             <p>Aqui eu coloco as formas das pessoas me encontrarem</p>
         </div>
-        <div id="fp-nav">
+        <nav>
             <ul>
-                <li id="home-nav"></li>
-                <li id="about-nav"></li>
-                <li id="experience-nav"></li>
-                <li id="skills-nav"><a></a></li>
-                <li id="portifolio-nav"></li>
-                <li id="contact-nav"></li>
+                <li onclick="scrollingTo()"><a href="#home-main"></a></li>
+                <li onclick="scrollingTo()"><a href="#about-main"></a></li>
+                <li onclick="scrollingTo()"><a href="#experience-main"></a></li>
+                <li onclick="scrollingTo()"><a href="#skills-main"></a></li>
+                <li onclick="scrollingTo()"><a href="#portifolio-main"></a></li>
+                <li onclick="scrollingTo()"><a href="#contact-main"></a></li>
             </ul>
-        </div>
-        <div id="options-bar-div">
-            <ul id="options-bar">
-                <li class="options-bar" onclick="closeOptionsBar()"><a href="#home-main">Home</a></li>
-                <li class="options-bar" onclick="closeOptionsBar()"><a href="#about-main">About</a></li>
-                <li class="options-bar" onclick="closeOptionsBar()"><a href="#experience-main">Experience</a></li>
-                <li class="options-bar" onclick="closeOptionsBar()"><a href="#skills-main">Skills</a></li>
-                <li class="options-bar" onclick="closeOptionsBar()"><a href="#portifolio-main">Portifolio</a></li>
-                <li class="options-bar" onclick="closeOptionsBar()"><a href="#contact-main">Contact</a></li>
-            </ul>
-        </div>
+        </nav>
       </div>
 </body>
 <script src="scripts/scripts.js"></script>
