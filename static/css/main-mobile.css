@@ -1,0 +1,23 @@
+@media (max-width: 720px) {
+
+    #list-nav {
+        display: block;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 7px;
+    }
+
+    .list-nav {
+        list-style: none;
+        width: 7px;
+        height: 7px;
+        background-color: #aaa;
+        border-radius: 100%;
+        margin: 15px 10px;
+    }
+
+    #home-nav {
+        background-color: #000aaa;
+    }
+}
