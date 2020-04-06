@@ -4,6 +4,7 @@
     height: 50px;
     padding: 0;
     display: flex;
+    background-color: #bbb;
     transition-timing-function: ease-out;
     transition: 0.5s;
   }

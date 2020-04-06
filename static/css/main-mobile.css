@@ -1,5 +1,9 @@
 @media (max-width: 720px) {
 
+    .main {
+        padding: 10px 30px;
+    }
+
     #list-nav {
         display: block;
         position: fixed;
