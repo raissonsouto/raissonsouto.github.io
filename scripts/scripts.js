@@ -20,11 +20,13 @@ function toggleHamburguer() {
     document.getElementById('header').style.height = '100vh';
     document.getElementById('list-header').style.opacity = '1';
     document.getElementById('list-header').style.margin = '50px 7%';
+    document.getElementById('list-header').style.display = 'block';
   } else {
 
     document.getElementById('hamburger').className = "mobile-header";
     document.getElementById('header').style.height = '50px';
     document.getElementById('list-header').style.opacity = '0';
     document.getElementById('list-header').style.margin = '0px 7%';
+    document.getElementById('list-header').style.display = 'none';
   }
 }

@@ -4,8 +4,6 @@
     height: 50px;
     padding: 0;
     display: flex;
-    justify-content: start;
-    font-weight: 400;
     transition-timing-function: ease-out;
     transition: 0.5s;
   }
@@ -74,7 +72,7 @@
 
   #list-header {
     transition-timing-function: ease-out;
-    display: block;
+    display: none;
     transition: 0.7s;
     margin: 0px 7%;
     width: 90%;
