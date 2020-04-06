@@ -32,14 +32,14 @@ body {
     scroll-snap-align: center;
 }
 
-#fp-nav {
+#list-nav {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
     right: 25px;
 }
 
-#fp-nav li {
+.list-nav {
     list-style: none;
     width: 7px;
     height: 7px;
@@ -48,6 +48,6 @@ body {
     margin: 15px 10px;
 }
 
-#fp-nav #home-nav {
+#home-nav {
     background-color: #000aaa;
 }

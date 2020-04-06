@@ -21,12 +21,12 @@
             </div>
             <div class="mobile-header" id="logo">Raisson Souto</div>
             <ul id="list-header">
-                <li class="desktop-header list-header" id="home-header" onclick="scrollingTo()"><a href="#home-main">Home</a></li>
-                <li class="desktop-header list-header" id="about-header" onclick="scrollingTo()"><a href="#about-main">About</a></li>
-                <li class="desktop-header list-header" id="experience-header" onclick="scrollingTo()"><a href="#experience-main">Experience</a></li>
-                <li class="desktop-header list-header" id="skills-header" onclick="scrollingTo()"><a href="#skills-main">Skills</a></li>
-                <li class="desktop-header list-header" id="portifolio-header" onclick="scrollingTo()"><a href="#portifolio-main">Portifolio</a></li>
-                <li class="desktop-header list-header" id="contact-header" onclick="scrollingTo()"><a href="#contact-main">Contact</a></li>
+                <li class="desktop-header list-header" id="home-header" onclick="scrollingTo('home')"><a href="#home-main">Home</a></li>
+                <li class="desktop-header list-header" id="about-header" onclick="scrollingTo('about')"><a href="#about-main">About</a></li>
+                <li class="desktop-header list-header" id="experience-header" onclick="scrollingTo('experience')"><a href="#experience-main">Experience</a></li>
+                <li class="desktop-header list-header" id="skills-header" onclick="scrollingTo('skills')"><a href="#skills-main">Skills</a></li>
+                <li class="desktop-header list-header" id="portifolio-header" onclick="scrollingTo('portifolio')"><a href="#portifolio-main">Portifolio</a></li>
+                <li class="desktop-header list-header" id="contact-header" onclick="scrollingTo('contact')"><a href="#contact-main">Contact</a></li>
             </ul>
         </header>
         <div class="main" id="home-main">
@@ -54,13 +54,13 @@
             <p>Aqui eu coloco as formas das pessoas me encontrarem</p>
         </div>
         <nav>
-            <ul>
-                <li onclick="scrollingTo()"><a href="#home-main"></a></li>
-                <li onclick="scrollingTo()"><a href="#about-main"></a></li>
-                <li onclick="scrollingTo()"><a href="#experience-main"></a></li>
-                <li onclick="scrollingTo()"><a href="#skills-main"></a></li>
-                <li onclick="scrollingTo()"><a href="#portifolio-main"></a></li>
-                <li onclick="scrollingTo()"><a href="#contact-main"></a></li>
+            <ul id="list-nav">
+                <li class="list-nav" id="home-nav" onclick="scrollingTo('home')"><a href="#home-main"></a></li>
+                <li class="list-nav" id="about-nav" onclick="scrollingTo('about')"><a href="#about-main"></a></li>
+                <li class="list-nav" id="experiece-nav" onclick="scrollingTo('experience')"><a href="#experience-main"></a></li>
+                <li class="list-nav" id="skills-nav" onclick="scrollingTo('skills')"><a href="#skills-main"></a></li>
+                <li class="list-nav" id="portifolio-nav" onclick="scrollingTo('portifolio')"><a href="#portifolio-main"></a></li>
+                <li class="list-nav" id="contact-nav" onclick="scrollingTo('contact')"><a href="#contact-main"></a></li>
             </ul>
         </nav>
       </div>
