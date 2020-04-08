@@ -1,14 +1,17 @@
 var sectionActive = 'home';
 
-function scrollingTo(section) { 
+function scrollingTo(section) {
 
-  document.getElementById(sectionActive+"-header").querySelector('a').style.color = "#eee";
+  alert(section+'-main')
+  window.scrollTo(0, document.getElementById(section+'-main').offsetTop); 
+
+  document.getElementById(sectionActive+"-header").style.color = "#eee";
   document.getElementById(sectionActive+"-nav").style.backgroundColor = "#aaa";
 
   sectionActive = section;
 
-  document.getElementById(section+"-header").querySelector('a').style.color = "#000aaa";
-  document.getElementById(section+"-nav").style.backgroundColor = "#000aaa";
+  document.getElementById(section+"-header").style.color = "#08f";
+  document.getElementById(section+"-nav").style.backgroundColor = "#08f";
 
   if (window.innerWidth <= 720) {
     toggleHamburguer();

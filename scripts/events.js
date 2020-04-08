@@ -1,0 +1,6 @@
+document.getElementById('home-header').addEventListener('click', () => {scrollingTo('home')})
+document.getElementById('about-header').addEventListener('click', () => {scrollingTo('about')})
+document.getElementById('experience-header').addEventListener('click', () => {scrollingTo('experience')})
+document.getElementById('skills-header').addEventListener('click', () => {scrollingTo('skills')})
+document.getElementById('portifolio-header').addEventListener('click', () => {scrollingTo('portifolio')})
+document.getElementById('contact-header').addEventListener('click', () => {scrollingTo('contact')})

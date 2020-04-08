@@ -19,6 +19,7 @@
 
 .list-header {
     list-style: none;
+    transition: 0.3s;
 }
 
 #list-header {
@@ -27,14 +28,10 @@
     justify-content: space-around;
 }
 
-header a {
-    text-decoration: none;
-    transition: 0.3s;
-}
-header a:hover {
-    color: #000555bb;
+.list-header:hover {
+    color: #aad ;
 }
 
-#home-header a {
+#home-header {
     color: #08f;
 }
