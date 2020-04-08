@@ -2,7 +2,7 @@ var sectionActive = 'home';
 
 function scrollingTo(section) { 
 
-  document.getElementById(sectionActive+"-header").querySelector('a').style.color = "#000";
+  document.getElementById(sectionActive+"-header").querySelector('a').style.color = "#eee";
   document.getElementById(sectionActive+"-nav").style.backgroundColor = "#aaa";
 
   sectionActive = section;
@@ -13,7 +13,6 @@ function scrollingTo(section) {
   if (window.innerWidth <= 720) {
     toggleHamburguer();
   }
-
 }
 
 function toggleHamburguer() {

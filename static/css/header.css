@@ -6,7 +6,7 @@
     padding: 0px 7%;
     display: flex;
     justify-content: space-around;
-    background-color: #aaaaaaaa;
+    background-color: #000000aa;
 }
 
 .desktop-header, .mobile-header {
@@ -27,25 +27,14 @@
     justify-content: space-around;
 }
 
-
-
-
-
-
-
-
-
-
-
 header a {
     text-decoration: none;
     transition: 0.3s;
-    color: #000;
 }
 header a:hover {
     color: #000555bb;
 }
 
 #home-header a {
-    color: #000aaa;
+    color: #08f;
 }
