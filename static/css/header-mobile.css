@@ -4,7 +4,7 @@
     height: 50px;
     padding: 0;
     display: flex;
-    background-color: #111111dd;
+    background-color: #000000ee;
     transition-timing-function: ease-out;
     transition: 0.5s;
   }

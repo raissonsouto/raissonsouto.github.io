@@ -34,10 +34,8 @@ function switchViewAdvertise(index) {
 
   if (index < 6 && index > -1) {
 
-    alert()
-
     document.getElementById(items[sectionIndex]+"-header").style.color = "#eee";
-    document.getElementById(items[sectionIndex]+"-nav").style.backgroundColor = "#111";
+    document.getElementById(items[sectionIndex]+"-nav").style.backgroundColor = "#555";
 
     sectionIndex = index;
 

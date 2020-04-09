@@ -1,0 +1,50 @@
+#hi-home,
+#name-home,
+#description-home {
+    cursor: context-menu;
+}
+
+#raisson-home {
+    cursor: pointer;
+}
+#skills-home {
+    font-size: 15px;
+    color: #555;
+    cursor: pointer;
+}
+
+#contact-home {
+    margin-top: 30px;
+    position: relative;
+    border: 2px #08f solid;
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#contact-home span {
+    color: #08f;
+    transition: 0.3s;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+#contact-home div {
+    position: relative;
+    width: 117px;
+    height: 0px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    background-color: #08f;
+}
+
+#contact-home:hover div {
+    height: 37px;
+}
+
+#contact-home:hover span {
+    color: #eee;
+}
