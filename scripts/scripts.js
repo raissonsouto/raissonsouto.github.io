@@ -48,7 +48,7 @@ function moveUp() {switchViewAdvertise(sectionIndex-1)}
 
 function moveDown() {switchViewAdvertise(sectionIndex+1)}
 
-var lastScrollTop = 0;
+/* var lastScrollTop = 0;
 var vartotrytosolvthetwiceactiveyoffset = 0;
 
 window.addEventListener("scroll", function(){
@@ -72,4 +72,26 @@ window.addEventListener("scroll", function(){
 
   lastScrollTop = st <= 0 ? 0 : st;
 
-}, false);
+}, false); */
+
+var home = document.getElementById("home-main");
+var about = document.getElementById("about-main");
+var experience = document.getElementById("experience-main");
+var skills = document.getElementById("skills-main");
+var portifolio = document.getElementById("portifolio-main");
+var contact = document.getElementById("contact-main");
+
+var allMains = [home, about, experience, skills, portifolio, contact];
+
+function checarDiv(){
+  var st = window.pageYOffset || window.scrollTop;
+  for(var i in allMains){
+    if (st+10 >= allMains[i].offsetTop && i != allMains.length){
+      switchViewAdvertise(i);
+      console.log(i);
+    }
+  }
+}
+
+window.addEventListener("scroll", () => checarDiv());
+
