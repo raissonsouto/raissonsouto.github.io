@@ -13,6 +13,10 @@
     align-self: center;
 }
 
+.desktop-header {
+    display: inline-block;
+}
+
 .mobile-header {
     display: none;
 }
@@ -20,6 +24,7 @@
 .list-header {
     list-style: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #list-header {

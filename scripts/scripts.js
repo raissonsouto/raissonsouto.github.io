@@ -1,23 +1,3 @@
-var sectionActive = 'home';
-
-function scrollingTo(section) {
-
-  alert(section+'-main')
-  window.scrollTo(0, document.getElementById(section+'-main').offsetTop); 
-
-  document.getElementById(sectionActive+"-header").style.color = "#eee";
-  document.getElementById(sectionActive+"-nav").style.backgroundColor = "#aaa";
-
-  sectionActive = section;
-
-  document.getElementById(section+"-header").style.color = "#08f";
-  document.getElementById(section+"-nav").style.backgroundColor = "#08f";
-
-  if (window.innerWidth <= 720) {
-    toggleHamburguer();
-  }
-}
-
 function toggleHamburguer() {
   
   if (document.getElementById('hamburger').className == "mobile-header") {
@@ -36,3 +16,62 @@ function toggleHamburguer() {
     document.getElementById('list-header').style.display = 'none';
   }
 }
+
+function scrollingTo(index) {
+
+  document.getElementById(items[index]+'-main').scrollIntoView();
+  switchViewAdvertise(index);
+
+  if (window.innerWidth <= 720) {
+    toggleHamburguer();
+  }
+}
+
+const items = ['home','about','experience','skills','portifolio','contact'];
+var sectionIndex = 0;
+
+function switchViewAdvertise(index) {
+
+  if (index < 6 && index > -1) {
+
+    alert()
+
+    document.getElementById(items[sectionIndex]+"-header").style.color = "#eee";
+    document.getElementById(items[sectionIndex]+"-nav").style.backgroundColor = "#111";
+
+    sectionIndex = index;
+
+    document.getElementById(items[index]+"-header").style.color = "#08f";
+    document.getElementById(items[index]+"-nav").style.backgroundColor = "#08f";
+  }
+}
+
+function moveUp() {switchViewAdvertise(sectionIndex-1)}
+
+function moveDown() {switchViewAdvertise(sectionIndex+1)}
+
+var lastScrollTop = 0;
+var vartotrytosolvthetwiceactiveyoffset = 0;
+
+window.addEventListener("scroll", function(){
+
+  var st = window.pageYOffset || window.scrollTop;
+
+  if (vartotrytosolvthetwiceactiveyoffset == 0) {
+    if (st > lastScrollTop){
+
+      moveDown();
+  
+    } else if (st < lastScrollTop) {
+  
+      moveUp();
+    }
+
+    vartotrytosolvthetwiceactiveyoffset = 1
+  } else {
+    vartotrytosolvthetwiceactiveyoffset = 0;
+  }
+
+  lastScrollTop = st <= 0 ? 0 : st;
+
+}, false);

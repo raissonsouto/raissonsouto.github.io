@@ -4,7 +4,7 @@
     height: 50px;
     padding: 0;
     display: flex;
-    background-color: #111;
+    background-color: #111111dd;
     transition-timing-function: ease-out;
     transition: 0.5s;
   }
@@ -35,7 +35,7 @@
     height: 1px;
     transform: rotate(0);
     transition: all 0.25s;
-    background: black;
+    background: #aaa;
   }
   
   #hamburger-top {
