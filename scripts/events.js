@@ -5,6 +5,6 @@ document.getElementById('skills-header').addEventListener('click', () => {scroll
 document.getElementById('portifolio-header').addEventListener('click', () => {scrollingTo(4)})
 document.getElementById('contact-header').addEventListener('click', () => {scrollingTo(5)})
 
-document.getElementById('contact-home').addEventListener('click', () => {scrollingTo(5)})
+document.getElementById('contact-home').addEventListener('click', () => {document.getElementById('contact-main').scrollIntoView();})
 
-window.addEventListener("scroll", () => moveScroll());
+window.addEventListener("scroll", () => {moveScroll()});

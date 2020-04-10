@@ -6,18 +6,20 @@ function toggleHamburguer() {
     document.getElementById('header').style.height = '100vh';
     document.getElementById('list-header').style.opacity = '1';
     document.getElementById('list-header').style.margin = '50px 7%';
-    document.getElementById('list-header').style.display = 'block';
+    document.getElementById('list-header').style.top = '0px';
   } else {
 
     document.getElementById('hamburger').className = "mobile-header";
     document.getElementById('header').style.height = '50px';
     document.getElementById('list-header').style.opacity = '0';
     document.getElementById('list-header').style.margin = '0px 7%';
-    document.getElementById('list-header').style.display = 'none';
+    document.getElementById('list-header').style.top = '-320px';
   }
 }
 
 function scrollingTo(index) {
+  
+  scrollControl = 1;
 
   document.getElementById(items[index]+'-main').scrollIntoView();
   switchViewAdvertise(index);
@@ -25,6 +27,8 @@ function scrollingTo(index) {
   if (window.innerWidth <= 720) {
     toggleHamburguer();
   }
+
+  setTimeout(() => {scrollControl = 0}, 1000)
 }
 
 const items = ['home','about','experience','skills','portifolio','contact'];
@@ -35,12 +39,10 @@ function switchViewAdvertise(index) {
   if (index < 6 && index > -1) {
 
     document.getElementById(items[sectionIndex]+"-header").style.color = "#eee";
-    document.getElementById(items[sectionIndex]+"-nav").style.backgroundColor = "#555";
 
     sectionIndex = index;
 
     document.getElementById(items[index]+"-header").style.color = "#08f";
-    document.getElementById(items[index]+"-nav").style.backgroundColor = "#08f";
   }
 }
 
@@ -53,11 +55,17 @@ var listMain = [
   document.getElementById("contact-main")
 ];
 
+var scrollControl = 0;
+
 function moveScroll(){
-  var st = window.pageYOffset || window.scrollTop;
-  for(var i in allMains){
-    if (st+10 >= allMains[i].offsetTop && i != allMains.length){
-      switchViewAdvertise(i);
+
+  var scrollPosY = window.pageYOffset || window.scrollTop;
+
+  if (scrollControl == 0) {
+    for(var index in listMain){
+      if (scrollPosY+10 >= listMain[index].offsetTop){
+        switchViewAdvertise(index);
+      }
     }
   }
 }

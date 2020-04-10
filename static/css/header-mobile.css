@@ -3,8 +3,6 @@
   #header {
     height: 50px;
     padding: 0;
-    display: flex;
-    background-color: #000000ee;
     transition-timing-function: ease-out;
     transition: 0.5s;
   }
@@ -73,8 +71,10 @@
 
   #list-header {
     transition-timing-function: ease-out;
-    display: none;
-    transition: 0.7s;
+    display: block;
+    top: -320px;
+    position: relative;
+    transition: 0.5s;
     margin: 0px 7%;
     width: 90%;
     height: 100vh;
