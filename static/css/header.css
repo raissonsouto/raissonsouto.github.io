@@ -23,7 +23,7 @@
 
 .list-header {
     list-style: none;
-    transition: 0.3s;
+    transition: 0.1s;
     cursor: pointer;
 }
 

@@ -44,54 +44,21 @@ function switchViewAdvertise(index) {
   }
 }
 
-function moveUp() {switchViewAdvertise(sectionIndex-1)}
+var listMain = [
+  document.getElementById("home-main"),
+  document.getElementById("about-main"),
+  document.getElementById("experience-main"),
+  document.getElementById("skills-main"),
+  document.getElementById("portifolio-main"),
+  document.getElementById("contact-main")
+];
 
-function moveDown() {switchViewAdvertise(sectionIndex+1)}
-
-/* var lastScrollTop = 0;
-var vartotrytosolvthetwiceactiveyoffset = 0;
-
-window.addEventListener("scroll", function(){
-
-  var st = window.pageYOffset || window.scrollTop;
-
-  if (vartotrytosolvthetwiceactiveyoffset == 0) {
-    if (st > lastScrollTop){
-
-      moveDown();
-  
-    } else if (st < lastScrollTop) {
-  
-      moveUp();
-    }
-
-    vartotrytosolvthetwiceactiveyoffset = 1
-  } else {
-    vartotrytosolvthetwiceactiveyoffset = 0;
-  }
-
-  lastScrollTop = st <= 0 ? 0 : st;
-
-}, false); */
-
-var home = document.getElementById("home-main");
-var about = document.getElementById("about-main");
-var experience = document.getElementById("experience-main");
-var skills = document.getElementById("skills-main");
-var portifolio = document.getElementById("portifolio-main");
-var contact = document.getElementById("contact-main");
-
-var allMains = [home, about, experience, skills, portifolio, contact];
-
-function checarDiv(){
+function moveScroll(){
   var st = window.pageYOffset || window.scrollTop;
   for(var i in allMains){
     if (st+10 >= allMains[i].offsetTop && i != allMains.length){
       switchViewAdvertise(i);
-      console.log(i);
     }
   }
 }
-
-window.addEventListener("scroll", () => checarDiv());
 

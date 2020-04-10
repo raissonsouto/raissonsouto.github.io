@@ -1,3 +1,8 @@
+.social-networks-contact {
+    display: inline-block;
+    list-style: none;
+}
+
 .social-networks-contact img {
     width: 30px;
 }
