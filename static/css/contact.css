@@ -6,3 +6,29 @@
 .social-networks-contact img {
     width: 30px;
 }
+
+#contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+    background-color: #111;
+    display: block;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px #eee solid;
+    height: 40px;
+}
+
+#contact-button {
+    width: 65px;
+    height: 25px;
+    background-color: #08f;
+    border-radius: 5px;
+    text-align: center;
+}
