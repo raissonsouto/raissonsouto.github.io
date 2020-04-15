@@ -1,3 +1,9 @@
+#right-contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .social-networks-contact {
     display: inline-block;
     list-style: none;
@@ -17,12 +23,36 @@
     display: block;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    width: 275px;
+    border: none;
+    border-bottom: 1px #eee solid;
 }
 
 .input {
-    border: none;
-    border-bottom: 1px #eee solid;
     height: 40px;
+}
+
+#message-contact-form {
+    min-height: 100px;
+    overflow: hidden;
+    resize: none;
+}
+
+.hiddendiv{
+    display: none;
+    white-space: pre-wrap;
+    width: 275px;
+    min-height: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.lbr {
+    line-height: 3px;
 }
 
 #contact-button {

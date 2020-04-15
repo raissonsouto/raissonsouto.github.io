@@ -70,12 +70,12 @@
                 <li class="social-networks-contact"><a href="https://twitter.com/raissonsouto"><img src="static/images/twitter-logo-w.png" alt=""></a></li>
             </ul>
         </div>
-        <div>
+        <div id="right-contact-main">
             <h1>Send me a message</h1>
             <form id="contact-form" action="">
                 <input class="contact-form input" id="name-contact-form" placeholder="Full name" type="text">
                 <input class="contact-form input" id="email-contact-form"placeholder="Your email" type="email">
-                <textarea class="contact-form" id="message-contact-form" name="" id="" cols="30" rows="10"></textarea>
+                <textarea placeholder="Message" class="contact-form" id="message-contact-form"></textarea>
                 <div id="contact-button">SEND</div>
             </form>
         </div>
@@ -83,4 +83,24 @@
 </body>
 <script src="scripts/scripts.js"></script>
 <script src="scripts/events.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        var textArea = $('#message-contact-form'),
+        hiddenDiv = $(document.createElement('div')),
+        content = null;
+
+        hiddenDiv.addClass('hiddendiv');
+
+        $(textArea).after(hiddenDiv);
+
+        textArea.on('keyup', function(){
+            content = $(this).val();
+            content = content.replace(/\n/g, '<br>');
+            hiddenDiv.html(content + '<br class="lbr">');
+            $(this).css('height', hiddenDiv.height());
+        });
+    });
+</script>
+</script>
 </html>

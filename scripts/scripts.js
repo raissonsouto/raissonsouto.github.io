@@ -70,3 +70,6 @@ function moveScroll(){
   }
 }
 
+setInterval( () => {
+  document.getElementById('message-contact-form').style.height = document.getElementById('message-contact-form').scrollHeight;
+},1000);
