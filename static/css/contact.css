@@ -40,13 +40,11 @@
     resize: none;
 }
 
-.hiddendiv{
+#hidden-contact-form {
     display: none;
     white-space: pre-wrap;
     width: 275px;
-    min-height: 50px;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
+    min-height: 100px;
     padding: 5px;
     word-wrap: break-word;
 }
