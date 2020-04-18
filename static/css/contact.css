@@ -22,6 +22,7 @@
 .social-networks-contact {
     list-style: none;
     margin: 2%;
+    float: left;
 }
 
 .social-networks-contact a {
@@ -97,4 +98,22 @@
     left: 50%;
     transform: translate(-50%,-50%);
 
+}
+
+@media(max-width: 1170px) {
+    #inside-contact-main {
+        width: 55%;
+    }
+}
+
+@media(max-width: 900px) {
+    #inside-contact-main {
+        width: 65%;
+    }
+}
+
+@media(max-width: 720px) {
+    .social-networks-contact span {
+        display: none;
+    }
 }
