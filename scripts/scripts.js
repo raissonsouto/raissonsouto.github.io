@@ -70,6 +70,15 @@ function moveScroll(){
   }
 }
 
-setInterval( () => {
-  document.getElementById('message-contact-form').style.height = document.getElementById('message-contact-form').scrollHeight;
-},1000);
+function submitEmail() {
+
+  var name = document.getElementById('name-contact-form');
+  var email = document.getElementById('email-contact-form');
+  var message = document.getElementById('message-contact-form');
+
+  if(!name.value || !email.value || !message.value) {
+    alert('erro! algum campo está vazio')
+  } else {
+    alert('message sent')
+  }
+}

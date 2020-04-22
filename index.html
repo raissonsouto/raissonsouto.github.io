@@ -79,7 +79,7 @@
                         <input class="contact-form input" id="email-contact-form"placeholder="Your email" type="email">
                         <textarea placeholder="Message" class="contact-form" id="message-contact-form"></textarea>
                         <div id="hidden-contact-form"></div>
-                        <div id="contact-button"><span>send</span></div>
+                        <div id="contact-button" style="cursor: pointer;"><span style="cursor: pointer;">send</span></div>
                     </form> 
                 </div>
             </div>
@@ -91,6 +91,8 @@
 <script src="scripts/events.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+
+    // textarea
 $(function(){
     var textArea = $('#message-contact-form'),
     hiddenDiv = $('#hidden-contact-form');

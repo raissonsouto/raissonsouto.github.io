@@ -120,8 +120,16 @@
     }
 
     #inside-contact-main {
-        width: 90%;
-        height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
     }
 
     #content-contact {
@@ -130,14 +138,15 @@
 
     #title-contact {
         position: relative;
-        margin-top: 10%;
+        margin-top: 4%;
         font-size: 25pt;
     }
 
     #contact-items {
         position: absolute;
         width: 100%;
-        top: 85%;
+        left: 10px;
+        bottom: -50px;
     }
 
     #email-contact-list {
@@ -147,7 +156,7 @@
     #contact-form {
         display: flex;
         flex-direction: column;
-        margin-top: 10%;
+        margin-top: 5%;
         align-items: center;
     }
 
@@ -160,11 +169,11 @@
     #email-contact-main {
         display: block;
         position: absolute;
-        top: 80%;
+        bottom: 5px;
     }
 
     #description-contact {
-        margin-top: 10%;
+        margin-top: 5%;
         font-size: 15pt;
         display: block;
     }

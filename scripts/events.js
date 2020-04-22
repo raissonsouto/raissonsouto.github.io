@@ -8,3 +8,7 @@ document.getElementById('contact-header').addEventListener('click', () => {scrol
 document.getElementById('contact-home').addEventListener('click', () => {document.getElementById('contact-main').scrollIntoView();})
 
 window.addEventListener("scroll", () => {moveScroll()});
+
+document.getElementById('contact-button').addEventListener('click', () => {
+    submitEmail();
+})
