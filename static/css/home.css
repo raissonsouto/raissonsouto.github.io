@@ -34,7 +34,7 @@
 
 #contact-home div {
     position: relative;
-    width: 117px;
+    width: 119px;
     height: 0px;
     transition: 0.3s;
     transition-timing-function: ease-out;
@@ -42,7 +42,7 @@
 }
 
 #contact-home:hover div {
-    height: 37px;
+    height: 38px;
 }
 
 #contact-home:hover span {

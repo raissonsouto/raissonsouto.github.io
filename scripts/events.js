@@ -10,5 +10,5 @@ document.getElementById('contact-home').addEventListener('click', () => {documen
 window.addEventListener("scroll", () => {moveScroll()});
 
 document.getElementById('contact-button').addEventListener('click', () => {
-    submitEmail();
+    validateForm();
 })
