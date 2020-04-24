@@ -104,14 +104,7 @@
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 230px;
-}
-
-#contact-button span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
+    border: none;
 }
 
 @media(max-width: 720px) {

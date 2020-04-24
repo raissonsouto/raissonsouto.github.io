@@ -74,14 +74,21 @@
                     </ul>
                 </div>
                 <div>
-                    <form class="contact-items" id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdW5ASMW8nQiY3s6IkIq2uiccuHYy9RRHYLEyQF0hOhD6g-XA/formResponse" method="POST">
-                        <input name="name" class="contact-form input" id="name-contact-form" placeholder="Full name" type="text" name="entry.1655000235">
-                        <input email="email" class="contact-form input" id="email-contact-form"placeholder="Your email" type="email" name="entry.439596306">
-                        <textarea placeholder="Message" class="contact-form" name="message" id="message-contact-form" name="entry.199088129"></textarea>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='http://zerobudget.club/';}"></iframe> 
+                    <script type="text/javascript">var submitted=false;</script>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdW5ASMW8nQiY3s6IkIq2uiccuHYy9RRHYLEyQF0hOhD6g-XA/formResponse" method="post" onsubmit="return validateForm(); " target="hidden_iframe">
+                    
+                        <input class="contact-form input" id="name-contact-form" placeholder="Full name" type="text" required name="entry.1655000235">
+                        <input class="contact-form input" id="email-contact-form" placeholder="Your email" type="text" required name="entry.439596306">
+                    
+                        <textarea placeholder="Message" class="contact-form" id="message-contact-form" required name="entry.199088129"></textarea>
                         <div id="hidden-contact-form"></div>
-                        <input type="button" value="send" id="contact-button">
-                        <!--<div id="contact-button" style="cursor: pointer;"><span style="cursor: pointer;">send</span></div>-->
-                    </form> 
+                    
+                        <button id="contact-button" type="submit">SEND</button>
+                    
+                    </form>
+                    
                 </div>
             </div>
             <span id="email-contact-main">raisonsouto42@gmail.com</span>
