@@ -57,7 +57,7 @@ var listMain = [
 
 var scrollControl = 0;
 
-function moveScroll(){
+function moveScroll() {
 
   var scrollPosY = window.pageYOffset || window.scrollTop;
 
@@ -74,7 +74,7 @@ function validateName() {
   var name = document.getElementById('name-contact-form').value;
 
   if(name.length == 0) {
-    alert("Name can't be blank") ;
+    document.getElementById('error-form').innerHTML = "Name can't be blank" ;
     return false;
 
   }

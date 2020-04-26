@@ -6,3 +6,5 @@ document.getElementById('portifolio-header').addEventListener('click', () => {sc
 document.getElementById('contact-header').addEventListener('click', () => {scrollingTo(5)})
 
 document.getElementById('contact-home').addEventListener('click', () => {document.getElementById('contact-main').scrollIntoView();})
+
+window.addEventListener('scroll', () => {moveScroll()})
