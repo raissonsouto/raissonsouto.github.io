@@ -63,7 +63,7 @@ function moveScroll() {
 
   if (scrollControl == 0) {
     for(var index in listMain){
-      if (scrollPosY+10 >= listMain[index].offsetTop){
+      if (scrollPosY+10 >= listMain[index].offsetTop) {
         switchViewAdvertise(index);
       }
     }
@@ -74,12 +74,13 @@ function validateName() {
   var name = document.getElementById('name-contact-form').value;
 
   if(name.length == 0) {
-    document.getElementById('error-form').innerHTML = "Name can't be blank" ;
+    document.getElementById('error-message-form').innerHTML = "Name can't be blank" ;
+    document.getElementById('error-image-form').style.display = 'inline-block';
     return false;
 
   }
   if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-    alert("Please enter your correct name") ;//Validation Message
+    document.getElementById('error-form').innerHTML = "Please enter your correct name";
     return false;
   }
   return true;
@@ -87,30 +88,41 @@ function validateName() {
 
 function validateEmail () {
 
-var email = document.getElementById('email-contact-form').value;
-if(email.length == 0) {
-  alert("Email can't be blank") ;//Validation Message
-  return false;
+  var email = document.getElementById('email-contact-form').value;
+  if(email.length == 0) {
+    document.getElementById('error-form').innerHTML = "Email can't be blank";
+    return false;
+  }
+  if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    document.getElementById('error-form').innerHTML = "Please enter a valid email address";
+    return false;
+  }
 
+  return true;
 }
 
-if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-  alert("Please enter a correct email address") ;//Validation Message
-  return false;
+function validateMEssage () {
 
-}
-
-return true;
+  var message = document.getElementById('message-contact-form').value;
+  if(message.length == 0) {
+    document.getElementById('error-form').innerHTML = "Message can't be blank";
+    return false;
+  }
+  
+  return true;
 }
 
 function validateForm() {
-if (!validateName() || !validatePhone() || !validateEmail()) {
-
-  alert("Form not submitted");//Validation Message
-  return false;
-}
-else {
-  submitted=true;
+  if (!validateName() || !validateMEssage() || !validateEmail()) {
+    return false;
+  }
+  submitted = true;
+  function resetForm()
   return true;
 }
+
+function resetForm() {
+  document.getElementById('name-contact-form').value = '';
+  document.getElementById('email-contact-form').value = '';
+  document.getElementById('message-contact-form').value = '';
 }

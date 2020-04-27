@@ -17,7 +17,7 @@
 </head>
 <body>
     <header id="header">
-        <div class="mobile-header" id="hamburger" onclick="toggleHamburguer()">
+        <div class="mobile-header" id="hamburger">
             <div class="hamburger-part" id="hamburger-top"></div>
             <div class="hamburger-part" id="hamburger-bottom"></div>
         </div>
@@ -48,7 +48,12 @@
     </div>
     <div class="main" id="experience-main">
         <h1>experience</h1>
-        <p>Aqui eu coloco minhas habilidades, tais como idiomas, tecnologias, etc</p>
+        <p>problemas do codigo</p>
+        <p>no chrome ta dando scroll duplo</p>
+        <p>no firefox qndo vc manda um email e da f5 aparece um alert indesejado</p>
+        <p>a mudança de cor no header ocorre mais rapido quando sobe do q qndo desce</p>
+        <p>melhorar o auto complete do form</p>
+        <p>toggle hamburger nao funciona</p>
     </div>
     <div class="main" id="skills-main">
         <h1>Skills</h1>
@@ -59,59 +64,43 @@
         <p>decidir entre experiencias e portifolio</p>
     </div>
     <div class="main" id="contact-main">
-        <div id="inside-contact-main">
-            <h1 class="contact-items" id="title-contact">Contact</h1>
-            <h2 class="contact-items" id="description-contact">You find me as <span style="color: #08f">raissosouto</span> in the most popular social networks. Send me a email :)</h2>
-            <div id="content-contact">
-                <div id="contact-items">
-                    <ul class="contact-items">
-                        <li id="email-contact-list" class="social-networks-contact"><a href="https://www.youtube.com/channel/UCvPUTnTXWzwUebmLrQl0QIA?view_as=subscriber"><span id="email-contact">raisonsouto42@gmail.com</span></a></li>
-                        <li class="social-networks-contact"><a href="https://github.com/raissonsouto"><img src="static/images/github-logo-w.png" alt=""><span>raissonsouto</span></a></li>
-                        <li class="social-networks-contact"><a href="https://www.linkedin.com/feed/"><img src="static/images/linkedin-logo-w.png" alt=""><span> Raisson Souto</span></a></li>
-                        <li class="social-networks-contact"><a href=""><img src="static/images/instagram-logo-w.png" alt="https://twitter.com/raissonsouto"><span> raissonsouto</span></a></li>
-                        <li class="social-networks-contact"><a href="https://twitter.com/raissonsouto"><img src="static/images/twitter-logo-w.png" alt=""><span> raissonsouto</span></a></li>
-                        <li class="social-networks-contact"><a href="https://www.youtube.com/channel/UCvPUTnTXWzwUebmLrQl0QIA?view_as=subscriber"><img src="static/images/youtube.png" alt=""><span> Raisson Souto</span></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-    onload="if(submitted) {window.location='http://zerobudget.club/';}"></iframe> 
-                    <script type="text/javascript">var submitted=false;</script>
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdW5ASMW8nQiY3s6IkIq2uiccuHYy9RRHYLEyQF0hOhD6g-XA/formResponse" method="post" onsubmit="return validateForm(); " target="hidden_iframe">
-                    
-                        <input class="contact-form input" id="name-contact-form" placeholder="Full name" type="text" required name="entry.1655000235">
-                        <input class="contact-form input" id="email-contact-form" placeholder="Your email" type="text" required name="entry.439596306">
-                    
-                        <textarea placeholder="Message" class="contact-form" id="message-contact-form" required name="entry.199088129"></textarea>
-                        <div id="hidden-contact-form"></div>
+        <div id="relative-contact">
+            <div id="inside-contact-main">
+                <h1 class="contact-items" id="title-contact">Contact</h1>
+                <h2 class="contact-items" id="description-contact">You find me as <span style="color: #08f">raissosouto</span> in the most popular social networks. Send me a email :)</h2>
+                <div id="content-contact">
+                    <div id="contact-items">
+                        <ul class="contact-items">
+                            <li class="social-networks-contact"><a href="https://github.com/raissonsouto"><img src="static/images/github-logo-w.png" alt=""><span>raissonsouto</span></a></li>
+                            <li class="social-networks-contact"><a href="https://www.linkedin.com/feed/"><img src="static/images/linkedin-logo-w.png" id="linkedin-logo" alt=""><span> Raisson Souto</span></a></li>
+                            <li class="social-networks-contact"><a href=""><img src="static/images/instagram-logo-w.png" alt="https://twitter.com/raissonsouto"><span> raissonsouto</span></a></li>
+                            <li class="social-networks-contact"><a href="https://twitter.com/raissonsouto"><img src="static/images/twitter-logo-w.png" alt=""><span> raissonsouto</span></a></li>
+                            <li class="social-networks-contact"><a href="https://www.youtube.com/channel/UCvPUTnTXWzwUebmLrQl0QIA?view_as=subscriber"><img src="static/images/youtube.png" alt=""><span> Raisson Souto</span></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://zerobudget.club/';}"></iframe> 
+                        <script type="text/javascript">var submitted=false;</script>
 
-                        <span id="error-form"></span>
-                    
-                        <button id="contact-button" type="submit">SEND</button>
-                    
-                    </form>
-                    
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdW5ASMW8nQiY3s6IkIq2uiccuHYy9RRHYLEyQF0hOhD6g-XA/formResponse" method="post" onsubmit="return validateForm(); " target="hidden_iframe" id="contact-form" novalidate>
+
+                            <div id="my-mail"><div><p id="my-email">raissonsouto@outlook.com</p></div><div id="copy-button"><img src="./static/images/icons8-copy-24.png" alt=""></div></div>
+                            <input class="contact-form input" id="name-contact-form" placeholder="Full name" type="text" required name="entry.1655000235" autocomplete="off">
+                            <input class="contact-form input" id="email-contact-form" placeholder="Your email" type="text" required name="entry.439596306" autocomplete="off">
+                            <textarea placeholder="Message" class="contact-form" id="message-contact-form" required name="entry.199088129"></textarea>
+
+                                <div id="last-line-form">
+                                    <img src="./static/images/icons8-error-30.png" alt="" id="error-image-form"><p id="error-message-form"></p><button id="contact-button" type="submit">SEND</button>
+                                </div>
+                        </form>                        
+                    </div>
                 </div>
             </div>
-            <span id="email-contact-main">raisonsouto42@gmail.com</span>
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="scripts/scripts.js"></script>
 <script src="scripts/events.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-
-    // textarea
-$(function(){
-    var textArea = $('#message-contact-form'),
-    hiddenDiv = $('#hidden-contact-form');
-    
-    textArea.on('keyup', function(){
-        var content = $(this).val().replace(/\n/g, '<br>');
-        hiddenDiv.html(content + '<br class="lbr">');
-        $(this).css('height', hiddenDiv.height());
-    });
-});
-</script>
+<script>toggleHamburger()</script>
 </html>

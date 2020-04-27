@@ -1,4 +1,4 @@
-#contact-main {
+#relative-contact {
     position: relative;
 }
 
@@ -21,7 +21,11 @@
 }
 
 #contact-items {
-    margin-top: 15px;
+    margin-top: 2px;
+}
+
+#contact-form {
+    margin-top: 10px;
 }
 
 #title-contact {
@@ -34,7 +38,7 @@
 
 .social-networks-contact {
     list-style: none;
-    margin: 2%;
+    margin: 10px;
     float: left;
 }
 
@@ -47,15 +51,13 @@
     transform: translate(-30%,30%);
 }
 
-#email-contact {
-    position: relative;
-    left: -10px;
+#linkedin-logo {
+    transform: translate(-30%, 12%);
 }
 
 #contact-form {
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
     align-items: center;
 }
 .contact-form {
@@ -63,7 +65,7 @@
     font-size: 15px;
     display: block;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     outline: none;
     resize: none;
     width: 300px;
@@ -77,33 +79,67 @@
     height: 40px;
 }
 
+#my-mail {
+    transform: translate(-21px);
+    margin-bottom: 5px;
+}
+
+#my-mail div {
+    display: inline-block;
+}
+
+#copy-button {
+    background-color: #222;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    transform: translate(15px,7px);
+}
+
+#copy-button img {
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 #message-contact-form {
     min-height: 100px;
     overflow: hidden;
     resize: none;
-}
-
-#hidden-contact-form {
-    display: none;
-    white-space: pre-wrap;
-    width: 300px;
-    min-height: 100px;
-    padding: 5px;
     word-wrap: break-word;
+    padding-top: 10px;
 }
 
-.lbr {
-    line-height: 3px;
+#last-line-form {
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#error-image-form {
+    display: none;
+    height: 20px;
+    transform: translate(0px,3px);
+    float: left;
+}
+
+#error-message-form {
+    color: #a20;
+    display: inline-block;
+    font-size: 10pt;
+    text-align: left;
+    transform: translateX(-30px);
 }
 
 #contact-button {
+    float: right;
     width: 65px;
-    position: relative;
     height: 30px;
     background-color: #08f;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 230px;
     border: none;
 }
 

@@ -4,7 +4,8 @@ document.getElementById('experience-header').addEventListener('click', () => {sc
 document.getElementById('skills-header').addEventListener('click', () => {scrollingTo(3)})
 document.getElementById('portifolio-header').addEventListener('click', () => {scrollingTo(4)})
 document.getElementById('contact-header').addEventListener('click', () => {scrollingTo(5)})
-
+document.getElementById('hamburger').addEventListener('click', () => {toggleHamburguer()})
+window.addEventListener('scroll', () => {moveScroll()})
 document.getElementById('contact-home').addEventListener('click', () => {document.getElementById('contact-main').scrollIntoView();})
 
-window.addEventListener('scroll', () => {moveScroll()})
+document.getElementById('contact-button').addEventListener('click', () => {resetForm()})
