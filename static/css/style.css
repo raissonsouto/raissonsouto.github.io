@@ -5,6 +5,7 @@
     font-family: 'Roboto', sans-serif;
     color: #eee;
     padding: 0;
+    resize: none;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     letter-spacing: 1.5px;
