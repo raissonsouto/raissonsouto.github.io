@@ -6,6 +6,7 @@
     color: #eee;
     padding: 0;
     resize: none;
+    outline: none;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     letter-spacing: 1.5px;

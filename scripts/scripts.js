@@ -57,3 +57,82 @@ function moveScroll() {
         }
     }
 }
+
+function validateName() {
+
+    var name = document.getElementById('name-contact-form').value;
+
+    if(name.length == 0) {
+      
+      errorInput("name","Name can´t be blank")
+      return false;
+
+    }
+    if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+
+      errorInput("name","Oops, maybe you put an invalid character")
+      return false;
+    }
+    return true;
+  }
+
+ function validateEmail () {
+
+  var email = document.getElementById('email-contact-form').value;
+
+  if(email.length == 0) {
+
+    errorInput("email","Email can´t be blank")
+    return false;
+
+  }
+
+  if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+    errorInput("email","Please enter a valid email address")
+    return false;
+
+  }
+
+  return true;
+
+}
+
+function validateMessage () {
+
+  var message = document.getElementById('message-contact-form').value;
+
+  if(message.length == 0) {
+
+    errorInput("message","message can´t be blank")
+    return false;
+
+  }
+
+  return true;
+
+}
+
+function validateForm() {
+  if (!validateName() || !validateEmail() || !validateMessage()) {
+    return false;
+  } else {
+
+    submitted=true;
+    return true;
+  }
+}
+
+function resetInput (element) {
+    document.getElementById('error-message-form').innerHTML = "";
+    document.getElementById('error-image-form').style.display = 'none';
+    document.getElementById(element+'-contact-form').style.borderBottom = '1px #fff solid';
+    document.getElementById(element+'-contact-form').style.color = '#fff';
+}
+
+function errorInput (element, message) {
+  document.getElementById('error-message-form').innerHTML = message;
+  document.getElementById('error-image-form').style.display = 'block';
+  document.getElementById(element+'-contact-form').style.borderBottom = '1px #a20 solid';
+  document.getElementById(element+'-contact-form').style.color = '#f20';
+}

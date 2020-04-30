@@ -10,6 +10,10 @@ document.getElementById('portifolio-h').addEventListener('click', () => {scrolli
 document.getElementById('experience-h').addEventListener('click', () => {scrollingTo(4)})
 document.getElementById('contact-h').addEventListener('click', () => {scrollingTo(5)})
 
+// home events
+
+document.getElementById('contact-home').addEventListener('click', () => {scrollingTo(5)})
+
 // scroll event
 
 window.addEventListener('scroll', () => {moveScroll()})
@@ -27,3 +31,6 @@ setInterval(() => {
         document.getElementById('social-networks-h').style.display = 'none';
     }
 },1080)
+
+document.getElementById('name-contact-form').addEventListener('focus', () => {resetInput('name')})
+document.getElementById('email-contact-form').addEventListener('focus', () => {resetInput('email')})
