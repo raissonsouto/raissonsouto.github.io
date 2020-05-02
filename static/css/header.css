@@ -34,6 +34,10 @@ header {
     color: #aad;
 }
 
+#home-h {
+    color: #08f;
+}
+
 #social-networks-h, #email-h {
     display: none;
 }

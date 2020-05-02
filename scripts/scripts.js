@@ -29,20 +29,19 @@ function scrollingTo(index) {
     switchViewAdvertise(index);
   
     if (window.innerWidth <= 720) {
-        toggleHamburguer();
+        toggleHamburger();
     }
     setTimeout(() => {scrollControl = 0},1000)
 }
   
 function switchViewAdvertise(index) {
 
-    console.log(window.pageYOffset)
     document.getElementById(items[sectionIndex]+"-h").style.color = "#eee";
     sectionIndex = index;
     document.getElementById(items[index]+"-h").style.color = "#08f";
 }
   
-  var scrollControl = 0;
+var scrollControl = 0;
   
 function moveScroll() {
   

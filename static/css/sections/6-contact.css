@@ -40,6 +40,7 @@
 
 .social-networks-contact a {
     text-decoration: none;
+    width: 160px;
 }
 
 .social-networks-contact img {
@@ -140,7 +141,7 @@
 
     #description-contact {
         text-align: center;
-        font-size: 15pt;
+        font-size: 17pt;
         padding: 0px 30px;
     }
 
@@ -167,6 +168,10 @@
         list-style: none;
         display: inline-flex;
         margin: 0px;
+    }
+
+    .social-networks-contact a {
+        width: 5px;
     }
     
     #github-network-contact {
