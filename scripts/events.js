@@ -32,5 +32,10 @@ setInterval(() => {
     }
 },1080)
 
+document.getElementById('copy-email-contact').addEventListener('click',() => {
+    alertPopup('email copied');
+    copyText();
+})
+
 document.getElementById('name-contact-form').addEventListener('focus', () => {resetInput('name')})
 document.getElementById('email-contact-form').addEventListener('focus', () => {resetInput('email')})

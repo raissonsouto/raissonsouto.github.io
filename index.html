@@ -4,7 +4,6 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cache-control" content="no-cache"/>
     <!--title-->
     <title>Raisson Souto</title>
     <!--general css files-->
@@ -79,7 +78,7 @@
     <div class="section" id="contact-m">
         <div id="inside-contact">
             <div id="top-contact">
-                <div id="description-div"><h2 class="contact-items" id="description-contact">Find me at the most popular social networks as raissonsouto or Raisson Souto and send a email to <span>raissonsouto@outlook.com</span></h2></div>
+                <div id="description-div"><h2 class="contact-items" id="description-contact">Find me at the most popular social networks as raissonsouto or Raisson Souto and send a email to<span value="raissonsouto@outlook.com" id="email-contact-c"> raissonsouto@outlook.com</span><div id="copy-email-contact"><img src="./static/images/icons8-copy-24-w.png"></div></h2></div>
             </div>
             <div id="bottom-contact">
                 <div id="left-contact">
@@ -120,10 +119,9 @@
 
                     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdW5ASMW8nQiY3s6IkIq2uiccuHYy9RRHYLEyQF0hOhD6g-XA/formResponse" method="post" onsubmit="return validateForm(); " target="hidden_iframe" id="contact-form" novalidate>
 
-                        <input class="contact-form input" id="name-contact-form" placeholder="Full name" type="text" required name="entry.1655000235" autocomplete="off">
-                        <input class="contact-form input" id="email-contact-form" placeholder="Your email" type="text" required name="entry.439596306" autocomplete="off">
+                        <input class="contact-form" id="name-contact-form" placeholder="Full name" type="text" required name="entry.1655000235" autocomplete="off">
+                        <input class="contact-form" id="email-contact-form" placeholder="Your email" type="text" required name="entry.439596306" autocomplete="off">
                         <textarea placeholder="Message" class="contact-form" id="message-contact-form" required name="entry.199088129"></textarea>
-
                         <div id="last-line-form">
                             <img src="./static/images/error.png" alt="" id="error-image-form"><p id="error-message-form"></p><button id="button-contact" type="submit">SEND</button>
                         </div>
@@ -132,6 +130,7 @@
             </div>
         </div>
     </div>
+    <div id="alert"></div>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='https://raissonsouto.github.io/';}"></iframe>
 </body>
 <!--page scripts-->

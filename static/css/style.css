@@ -27,3 +27,18 @@ body {
     scroll-snap-align: center;
     padding-top: 40px;
 }
+
+#alert {
+    cursor: default;
+    position: fixed;
+    width: auto;
+    height: auto;
+    color: #050;
+    background-color: #aea;
+    padding: 10px;
+    bottom: 30px;
+    opacity: 0;
+    left: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+}

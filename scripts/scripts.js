@@ -1,9 +1,14 @@
+let vh = window.innerHeight * 0.01;
+ 
+// Configura o valor em --vh na raiz do documento
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 function toggleHamburger() {
   
     if (document.getElementById('hamburger').className == "mobile-h") {
   
         document.getElementById('hamburger').className = "mobile-h open";
-        document.querySelector('header').style.height = '100vh';
+        document.querySelector('header').style.height = 'calc(var(--vh, 1vh) * 100)';
         document.getElementById('desktop-h').style.opacity = '1';
         document.getElementById('desktop-h').style.margin = '50px 7%';
         document.getElementById('desktop-h').style.top = '50px';
@@ -117,6 +122,8 @@ function validateForm() {
     return false;
   } else {
 
+    alertPopup();
+    alertPopup('email sent')
     submitted=true;
     return true;
   }
@@ -127,11 +134,26 @@ function resetInput (element) {
     document.getElementById('error-image-form').style.display = 'none';
     document.getElementById(element+'-contact-form').style.borderBottom = '1px #fff solid';
     document.getElementById(element+'-contact-form').style.color = '#fff';
+    document.getElementById(element+'-contact-form').classList = 'contact-form';
 }
 
 function errorInput (element, message) {
   document.getElementById('error-message-form').innerHTML = message;
   document.getElementById('error-image-form').style.display = 'block';
-  document.getElementById(element+'-contact-form').style.borderBottom = '1px #a20 solid';
-  document.getElementById(element+'-contact-form').style.color = '#f20';
+  document.getElementById(element+'-contact-form').style.borderBottom = '2px #a20 solid';
+  document.getElementById(element+'-contact-form').classList += ' error-input';
+}
+
+function alertPopup (text) {
+  document.getElementById('alert').innerHTML = text;
+  document.getElementById('alert').style.opacity = '1';
+  setTimeout(() => {
+    document.getElementById('alert').style.opacity = '0';
+  }, 1500)
+}
+
+function copyText() {
+
+  document.execCommand("copy",document.getElementById("email-contact-c").value);
+  alert("Copied the text: ");
 }
