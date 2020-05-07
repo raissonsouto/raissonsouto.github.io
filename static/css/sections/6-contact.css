@@ -174,7 +174,6 @@
     #description-contact {
         text-align: center;
         font-size: 17pt;
-        padding: 0px 30px;
     }
 
     #bottom-contact {
@@ -203,7 +202,7 @@
     }
 
     .social-networks-contact a {
-        width: 5px;
+        width: 25px;
     }
     
     #github-network-contact {

@@ -12,7 +12,12 @@ document.getElementById('contact-h').addEventListener('click', () => {scrollingT
 
 // home events
 
-document.getElementById('contact-home').addEventListener('click', () => {scrollingTo(5)})
+document.getElementById('contact-home').addEventListener('click', () => {
+    scrollControl = 1;
+    document.getElementById(items[index]+'-m').scrollIntoView();
+    switchViewAdvertise(index);
+    setTimeout(() => {scrollControl = 0},1000);
+})
 
 // scroll event
 
