@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./static/css/sections/5-experience.css">
     <link rel="stylesheet" href="./static/css/sections/6-contact.css">
     <!--fav icon-->
-    <link rel="shortcut icon" href="./static/images/perfil.jpg" type="image/png">
+    <!--<link rel="shortcut icon" href="./static/images/perfil.jpg" type="image/png">-->
     <!--used font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
 </head>
@@ -73,6 +73,19 @@
     <div class="section" id="skills-m"></div>
     <!--Portifolio section-->
     <div class="section" id="portifolio-m">
+        <h1>Here you can find some of my projects</h1>
+        <div id="portifolio-github-repos-selector">
+            <div>
+                <p>all</p>
+                <P>lastest</P>
+                <p>most stars</p>
+                <p>most forks</p>
+            </div>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div id="repos"></div>
     </div>
     <!--Experience section-->
     <div class="section" id="experience-m"></div>
@@ -135,7 +148,5 @@
     <div id="alert"></div>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='https://raissonsouto.github.io/';}"></iframe>
 </body>
-<!--page scripts-->
-<script src="./scripts/scripts.js"></script>
-<script src="./scripts/events.js"></script>
+<script src="scripts/github.js"></script>
 </html>
