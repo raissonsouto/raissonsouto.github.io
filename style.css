@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #D3CFC9;
+  background-color: #181A1B;
+}
+
+footer {
+  background: linear-gradient(0deg, #181A1B 0%, #181A1B00 100%);
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #666;
+  position: relative;
+  padding-right: 50px;
+  bottom: 5px;
+}
+
+footer a:hover {
+  color: #0088ff;
+}
+
+.main {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.xp-main {
+  text-align: center;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-55%);
+}
+
+.container {
+  max-width: 800px;
+}
+
+.name {
+  font-size: 5rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.social-links {
+  margin-left: 30px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  padding: 0px 8px;
+  transform: translateY(-500%);
+}
+.skills-box {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.timeline {
+  width: 650px;
+  height: 100%;
+  position: relative;
+  top: 40px;
+  display: flex;
+}
+
+.lines {
+  margin-left: 40px;
+  margin-top: 56px;
+
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #08f;
+  border-radius: 7px;
+}
+
+.line {
+  height: 220px;
+  width: 2px;
+  background: #08f;
+  margin-left: 5.3px;
+}
+
+.cards {
+  margin-left: 12px;
+  transform: translateY(-50px);
+}
+
+.card {
+  background-color: #363636;
+  width: 600px;
+  height: 200px;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 15px 25px;
+}
+
+.skills-box {
+  position: fixed;
+  width: 230px;
+  left: 2.5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #363636;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.skills-box li {
+  margin: 15px 0;
+  list-style: none;
+}

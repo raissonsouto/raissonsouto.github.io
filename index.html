@@ -1,152 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--title-->
+  <head>
+    <meta charset="UTF-8" />
     <title>Raisson Souto</title>
-    <!--general css files-->
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="./static/css/header.css">
-    <!--sections css files-->
-    <link rel="stylesheet" href="./static/css/sections/1-home.css">
-    <link rel="stylesheet" href="./static/css/sections/2-about.css">
-    <link rel="stylesheet" href="./static/css/sections/3-skills.css">
-    <link rel="stylesheet" href="./static/css/sections/4-portifolio.css">
-    <link rel="stylesheet" href="./static/css/sections/5-experience.css">
-    <link rel="stylesheet" href="./static/css/sections/6-contact.css">
-    <!--fav icon-->
-    <!--<link rel="shortcut icon" href="./static/images/perfil.jpg" type="image/png">-->
-    <!--used font-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet"> 
-</head>
-
-<body>
-    <!--initial scripts-->
-    <script type="text/javascript">var submitted=false;</script>
-    <!--Header-->
-    <header>
-        <!--Hamburger button-->
-        <div class="mobile-h" id="hamburger">
-            <div class="hamburger-part" id="hamburger-top"></div>
-            <div class="hamburger-part" id="hamburger-bottom"></div>
-        </div>
-        <!--Logo-->
-        <p class="mobile-h" id="logo">Raisson Souto</p>
-        <!--List of sections-->
-        <ul id="desktop-h">
-            <li class="desktop-h" id="home-h">Home</li>
-            <li class="desktop-h" id="about-h">About</li>
-            <li class="desktop-h" id="skills-h">Skills</li>
-            <li class="desktop-h" id="portifolio-h">Portifolio</li>
-            <li class="desktop-h" id="experience-h">Experience</li>
-            <li class="desktop-h" id="contact-h">Contact</li>
-        </ul>
-        <!--social networks-->
-        <div id="email-h"><p>raissonsouto@outlook.com</p></div>
-        <ul class="mobile-h" id="social-networks-h">
-            <li class="social-networks-h"><a href="https://github.com/raissonsouto"><img src="./static/images/github.png" alt=""></a></li>
-            <li class="social-networks-h"><a href="https://www.linkedin.com/feed/"><img src="./static/images/linkedin.png" alt=""></a></li>
-            <li class="social-networks-h"><a href="https://instagram.com/raissonsouto"><img src="./static/images/instagram.png" alt=""></a></li>
-            <li class="social-networks-h"><a href="https://twitter.com/raissonsouto"><img src="./static/images/twitter.png" alt=""></a></li>
-            <li class="social-networks-h"><a href="https://www.youtube.com/channel/UCvPUTnTXWzwUebmLrQl0QIA?view_as=subscriber"><img src="./static/images/youtube.png" alt=""></a></li>
-        </ul>
-    </header>
-    <!--Home section-->
-    <div class="section" id="home-m">
-        <div id="left-home">
-            <h1 id="hi-home">Hi,</h1>
-            <h1 id="name-home">I'm <span id="raisson-home">Raisson</span>,</h1>
-            <h2 style="color: red;">Essa página ainda está sendo construida</h2>
-            <h2 id="description-home">At this very moment, trying to do something new in this wonderful world of    programming.</h2>
-            <div id="skills-home"><p>principais</p> | <p>tecnologias</p> | <p>dominadas</p></div>
-            <div id="contact-home">
-                <div></div>
-                <span>contact me</span>
-            </div>
-        </div>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.8.1/js/brands.js"
+    integrity="sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js"
+    integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1 class="name">Hello, I'm </h1>
+        <h1 class="name">
+          <span style="background-color: #0088ff; color: #fff;">
+            ⠀Raisson Souto !⠀
+          </span>
+        </h1>
+        <h2 style="font-weight: 200;">Computer Science student, passionate about cybersecurity, cloud and software engineering.</h2>
     </div>
-    <!--About section-->
-    <div class="section" id="about-m"></div>
-    <!--Skills section-->
-    <div class="section" id="skills-m"></div>
-    <!--Portifolio section-->
-    <div class="section" id="portifolio-m">
-        <h1>Here you can find some of my projects</h1>
-        <div id="portifolio-github-repos-selector">
-            <div>
-                <p>all</p>
-                <P>lastest</P>
-                <p>most stars</p>
-                <p>most forks</p>
-            </div>
-            <div>
-                <input type="text">
-            </div>
-        </div>
-        <div id="repos"></div>
     </div>
-    <!--Experience section-->
-    <div class="section" id="experience-m"></div>
-    <!--Contact section-->
-    <div class="section" id="contact-m">
-        <div id="inside-contact">
-            <div id="top-contact">
-                <div id="description-div"><h2 class="contact-items" id="description-contact">Find me at the most popular social networks as raissonsouto or Raisson Souto and send a email to<span value="raissonsouto@outlook.com" id="email-contact-c"> raissonsouto@outlook.com</span><div id="copy-email-contact"><img src="./static/images/icons8-copy-24-w.png"></div></h2></div>
-            </div>
-            <div id="bottom-contact">
-                <div id="left-contact">
-                    <ul id="social-networks-contact">
-                        <li class="social-networks-contact" id="github-network-contact">
-                            <a href="https://github.com/raissonsouto">
-                                <img src="static/images/github.png">
-                                <span>raissonsouto</span>
-                            </a>
-                        </li>
-                        <li class="social-networks-contact">
-                            <a href="https://www.linkedin.com/feed/">
-                                <img src="static/images/linkedin.png" id="linkedin-logo">
-                                <span>Raisson Souto</span>
-                            </a>
-                        </li>
-                        <li class="social-networks-contact">
-                            <a href="https://instagram.com/raissonsouto">
-                                <img src="static/images/instagram.png">
-                                <span>raissonsouto</span>
-                            </a>
-                        </li>
-                        <li class="social-networks-contact">
-                            <a href="https://twitter.com/raissonsouto">
-                                <img src="static/images/twitter.png">
-                                <span>raissonsouto</span>
-                            </a>
-                        </li>
-                        <li class="social-networks-contact">
-                            <a href="https://www.youtube.com/channel/UCvPUTnTXWzwUebmLrQl0QIA?view_as=subscriber">
-                                <img src="static/images/youtube.png">
-                                <span>Raisson Souto</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="right-contact">
-
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdW5ASMW8nQiY3s6IkIq2uiccuHYy9RRHYLEyQF0hOhD6g-XA/formResponse" method="post" onsubmit="return validateForm(); " target="hidden_iframe" id="contact-form" novalidate>
-
-                        <input class="contact-form" id="name-contact-form" placeholder="Full name" type="text" required name="entry.1655000235" autocomplete="off">
-                        <input class="contact-form" id="email-contact-form" placeholder="Your email" type="text" required name="entry.439596306" autocomplete="off">
-                        <textarea placeholder="Message" class="contact-form" id="message-contact-form" required name="entry.199088129"></textarea>
-                        <div id="last-line-form">
-                            <img src="./static/images/error.png" alt="" id="error-image-form"><p id="error-message-form"></p><button id="button-contact" type="submit">SEND</button>
-                        </div>
-                    </form>              
-                </div>
-            </div>
-        </div>
+    <footer>
+      <div class="social-links">
+        <a href="https://github.com/raissonsouto">
+          <i class="fab fa-github" title="GitHub"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/raissonsouto/">
+            <i class="fab fa-linkedin" title="Linkedin"></i>
+        </a>
     </div>
-    <div id="alert"></div>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='https://raissonsouto.github.io/';}"></iframe>
-</body>
-<script src="scripts/portifolio.js"></script>
+      <div>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="experience.html">experience</a>
+        <a href="contact.html">contact</a>
+      </div>
+      </footer>
+  </body>
 </html>
